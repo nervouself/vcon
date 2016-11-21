@@ -1,0 +1,10 @@
+[class*="vcon-"]{display:inline-block;font-size:50px;width:1em;height:1em;color:#979797;position:relative;}
+[class*="vcon-"]:before,[class*="vcon-"]:after{background:#979797;content:"";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+
+.vcon-close:before{width:1em;height:.1em;transform:translate(-50%,-50%) rotateZ(45deg);}
+.vcon-close:after{width:.1em;height:1em;transform:translate(-50%,-50%) rotateZ(45deg);}
+.vcon-close:before,.vcon-close:after{border-radius:.05em;}
+
+.vcon-dots:after{width:.2em;height:.2em;background:#979797;box-shadow:.4em 0 #979797,-.4em 0 #979797;border-radius:50%;}
+
+.vcon-left{}
