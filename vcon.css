@@ -1,5 +1,6 @@
 [class*="vcon-"]{
     display:inline-block;
+    box-sizing:border-box;
     font-size:50px;
     width:1em;
     height:1em;
@@ -9,6 +10,7 @@
 [class*="vcon-"]:before,
 [class*="vcon-"]:after{
     content:"";
+    display:inline-block;
     position:absolute;
     top:50%;
     left:50%;
@@ -82,7 +84,6 @@
 .vcon-refresh2{
     width:.9em;
     height:.9em;
-    box-sizing: border-box;
     border:.12em solid;
     border-radius:50%;
     border-color:#979797 transparent;
@@ -114,4 +115,27 @@
     border-style:solid;
     border-color:#979797 transparent;
     transform:translate(-50%,-50%) rotateZ(50deg);
+}
+
+.vcon-done{
+    border:1px solid #c1c2c3;
+    border-radius:50%;
+    font-size:100px;
+}
+.vcon-done:before{
+    width:.55em;
+    height:.55em;
+    box-sizing:border-box;
+    border-radius:50%;
+    border: .05em solid #e4007f;
+    border-right-color:transparent;
+}
+.vcon-done:after{
+    width:.05em;
+    height:.05em;
+    border-radius:50%;
+    box-shadow:.25em 0 #e4007f,.25em .01em #e4007f,.25em .015em #e4007f,.249em .03em #e4007f,.248em .04em #e4007f,.246em .05em #e4007f
+    ,.245em .06em #e4007f,.242em .07em #e4007f,.239em .08em #e4007f,.235em .09em #e4007f,.231em .1em #e4007f,.226em .11em #e4007f
+    ,.221em .12em #e4007f,.215em .13em #e4007f,.209em .14em #e4007f,.202em .15em #e4007f,.193em .16em #e4007f,.183em .17em #e4007f
+    ,.175em -.178em #e4007f;
 }
