@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="vcon.css">
     <style>
         body{
-            background: #ccc;
+            background: #d2d2d2;
             font-family: 'Microsoft Yahei';
+            min-width: 320px;
         }
-        [class*="vcon-"]{transition:all .2s ease-in-out;}
-        [class*="vcon-"]:hover{box-shadow:0 0 1em #fff;border-radius:.2em;}
+        [class*="vcon-"]{transition:all .3s ease-in-out;}
+        [class*="vcon-"]:hover{box-shadow:0 0 1em #fff;border-radius:50%;transform:rotateZ(360deg);}
         .h{
             text-align: center;
             color:#979797;
@@ -21,18 +22,19 @@
             display: flex;
             flex-wrap: wrap;
             justify-content:center;
-            max-width: 1020px;
+            max-width: 1000px;
+            padding: 0 20px;
             margin:0 auto;
         }
         .b{
             box-sizing: border-box;
-            width: 100px;
+            width: 120px;
             height: 100px;
             border: 1px solid #979797;
-            border-top-left-radius:20px;
-            border-top-right-radius:20px;
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
             border-bottom: none;
-            margin: 1px;
+            margin:2px;
             margin-bottom: 30px;
             position: relative;
         }
@@ -47,7 +49,7 @@
         .bc{
             position: absolute;
             box-sizing: border-box;
-            width: 100px;
+            width: 120px;
             height: 28px;
             font-size: 14px;
             line-height: 14px;
@@ -69,32 +71,32 @@
             <figcaption class="bc">.vcon-close</figcaption>
         </figure>
         <figure class="b">
+            <i class="i vcon-left"></i>
+            <figcaption class="bc">.vcon-left</figcaption>
+        </figure>
+        <figure class="b">
+            <i class="i vcon-right"></i>
+            <figcaption class="bc">.vcon-right</figcaption>
+        </figure>
+        <figure class="b">
+            <i class="i vcon-up"></i>
+            <figcaption class="bc">.vcon-up</figcaption>
+        </figure>
+        <figure class="b">
+            <i class="i vcon-down"></i>
+            <figcaption class="bc">.vcon-down</figcaption>
+        </figure>
+        <figure class="b">
             <i class="i vcon-dots"></i>
             <figcaption class="bc">.vcon-dots</figcaption>
         </figure>
         <figure class="b">
-            <i class="i"></i>
-            <figcaption class="bc"></figcaption>
+            <i class="i vcon-refresh"></i>
+            <figcaption class="bc">.vcon-refresh</figcaption>
         </figure>
         <figure class="b">
-            <i class="i"></i>
-            <figcaption class="bc"></figcaption>
-        </figure>
-        <figure class="b">
-            <i class="i"></i>
-            <figcaption class="bc"></figcaption>
-        </figure>
-        <figure class="b">
-            <i class="i"></i>
-            <figcaption class="bc"></figcaption>
-        </figure>
-        <figure class="b">
-            <i class="i"></i>
-            <figcaption class="bc"></figcaption>
-        </figure>
-        <figure class="b">
-            <i class="i"></i>
-            <figcaption class="bc"></figcaption>
+            <i class="i vcon-refresh2"></i>
+            <figcaption class="bc">.vcon-refresh2</figcaption>
         </figure>
         <figure class="b">
             <i class="i"></i>
