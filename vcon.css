@@ -96,7 +96,7 @@
     border-color:#979797 transparent transparent;
 }
 .vcon-refresh:before{
-    transform:translate(-155%,-15%) rotateZ(135deg);
+    transform:translate(-150%,-10%) rotateZ(135deg);
 }
 .vcon-refresh:after{
     transform:translate(50%,-80%) rotateZ(-45deg);
