@@ -175,6 +175,7 @@
     height:.2em;
     top:.4em;
     border-radius:50%;
+    box-shadow:-.4em .2em #979797,0 .2em #979797,.4em .2em #979797;
     -webkit-animation:3s dots infinite;
             animation:3s dots infinite;
 }
@@ -267,6 +268,8 @@
     height:.55em;
     box-sizing:border-box;
     border-radius:50%;
+    border:.035em solid #e4007f;
+    border-right-color: transparent;
     -webkit-animation:3s done-l-before infinite;
             animation:3s done-l-before infinite;
 }
@@ -406,6 +409,8 @@
     height:.55em;
     box-sizing:border-box;
     border-radius:50%;
+    border:.035em solid #979797;
+    border-right-color: transparent;
     -webkit-animation:3s fail-l-before infinite;
             animation:3s fail-l-before infinite;
 }
