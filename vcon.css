@@ -14,7 +14,9 @@
     position:absolute;
     top:50%;
     left:50%;
-    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+        -ms-transform:translate(-50%,-50%);
+            transform:translate(-50%,-50%);
 }
 
 .vcon-close:before,
@@ -30,7 +32,9 @@
     width:.1em;
     height:.1em;
     background:#979797;
-    transform:translate(-50%,-50%) rotateZ(45deg);
+    -webkit-transform:translate(-50%,-50%) rotateZ(45deg);
+        -ms-transform:translate(-50%,-50%) rotate(45deg);
+            transform:translate(-50%,-50%) rotateZ(45deg);
     border-radius:.05em;
 }
 .vcon-close:before{
@@ -96,16 +100,22 @@
     border-color:#979797 transparent transparent;
 }
 .vcon-refresh:before{
-    transform:translate(-150%,-10%) rotateZ(135deg);
+    -webkit-transform:translate(-150%,-10%) rotateZ(135deg);
+        -ms-transform:translate(-150%,-10%) rotate(135deg);
+            transform:translate(-150%,-10%) rotateZ(135deg);
 }
 .vcon-refresh:after{
-    transform:translate(50%,-80%) rotateZ(-45deg);
+    -webkit-transform:translate(50%,-80%) rotateZ(-45deg);
+        -ms-transform:translate(50%,-80%) rotate(-45deg);
+            transform:translate(50%,-80%) rotateZ(-45deg);
 }
 .vcon-refresh2:before{
     width:.12em;
     height:.12em;
     border-radius:50%;
-    transform:translate(-50%,-50%) rotateZ(45deg);
+    -webkit-transform:translate(-50%,-50%) rotateZ(45deg);
+        -ms-transform:translate(-50%,-50%) rotate(45deg);
+            transform:translate(-50%,-50%) rotateZ(45deg);
     box-shadow:.39em 0 #979797,-.39em 0 #979797,0 .39em #979797,0 -.39em #979797;
 }
 .vcon-refresh2:after{
@@ -114,15 +124,17 @@
     border-width:.2598em .15em;
     border-style:solid;
     border-color:#979797 transparent;
-    transform:translate(-50%,-50%) rotateZ(50deg);
+    -webkit-transform:translate(-50%,-50%) rotateZ(50deg);
+        -ms-transform:translate(-50%,-50%) rotate(50deg);
+            transform:translate(-50%,-50%) rotateZ(50deg);
 }
 
-.vcon-done{
+.vcon-done-l{
     border:1px solid #c1c2c3;
     border-radius:50%;
     font-size:200px;
 }
-.vcon-done:before{
+.vcon-done-l:before{
     width:.55em;
     height:.55em;
     box-sizing:border-box;
@@ -130,7 +142,7 @@
     border:.035em solid #e4007f;
     border-right-color:transparent;
 }
-.vcon-done:after{
+.vcon-done-l:after{
     width:.0345em;
     height:.0345em;
     border-radius:50%;
@@ -150,12 +162,12 @@
     ,-.13em .045em #e4007f,-.135em .04em #e4007f,-.14em .035em #e4007f,-.145em .03em #e4007f,-.15em .025em #e4007f,-.155em .02em #e4007f,-.16em .015em #e4007f;
 }
 
-.vcon-fail{
+.vcon-fail-l{
     border:1px solid #c1c2c3;
     border-radius:50%;
     font-size:200px;
 }
-.vcon-fail:before{
+.vcon-fail-l:before{
     width:.55em;
     height:.55em;
     box-sizing:border-box;
@@ -163,7 +175,7 @@
     border:.035em solid #979797;
     border-right-color:transparent;
 }
-.vcon-fail:after{
+.vcon-fail-l:after{
     width:.0345em;
     height:.0345em;
     border-radius:50%;

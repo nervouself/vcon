@@ -18,8 +18,10 @@
             color:#979797;
         }
         .c{
+            display: -webkit-box;
             display: flex;
             flex-wrap: wrap;
+            -webkit-box-pack:center;
             justify-content:center;
             max-width: 1000px;
             padding: 0 20px;
@@ -72,12 +74,15 @@
             bottom: 0;
             left: 0;
             right: 0;
-            transition:all .3s ease-in-out;
         }
-        .i:hover{
+        [class*="vcon-"]:hover{
+            -webkit-transition: all .3s ease-in-out;
+            transition:all .3s ease-in-out;
             box-shadow:0 0 1em #fff;
             border-radius:50%;
-            transform:rotateZ(360deg);
+            -webkit-transform:rotateZ(360deg);
+                -ms-transform:rotate(360deg);
+                    transform:rotateZ(360deg);
         }
     </style>
 </head>
@@ -122,12 +127,12 @@
 
     <div class="c">
         <figure class="hb">
-            <i class="i vcon-done"></i>
-            <figcaption class="hbc">.vcon-done</figcaption>
+            <i class="i vcon-done-l"></i>
+            <figcaption class="hbc">.vcon-done-l</figcaption>
         </figure>
         <figure class="hb">
-            <i class="i vcon-fail"></i>
-            <figcaption class="hbc">.vcon-fail</figcaption>
+            <i class="i vcon-fail-l"></i>
+            <figcaption class="hbc">.vcon-fail-l</figcaption>
         </figure>
     </div>
 
@@ -170,12 +175,12 @@
 
     <div class="c">
         <figure class="hb">
-            <i class="i vcm-done"></i>
-            <figcaption class="hbc">.vcm-done</figcaption>
+            <i class="i vcm-done-l"></i>
+            <figcaption class="hbc">.vcm-done-l</figcaption>
         </figure>
         <figure class="hb">
-            <i class="i vcm-fail"></i>
-            <figcaption class="hbc">.vcm-fail</figcaption>
+            <i class="i vcm-fail-l"></i>
+            <figcaption class="hbc">.vcm-fail-l</figcaption>
         </figure>
     </div>
 
