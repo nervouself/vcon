@@ -82,9 +82,19 @@
         [class*="vcon-"]:hover{
             box-shadow:0 0 1em #fff;
             border-radius:50%;
-            -webkit-transform:rotateZ(360deg);
+            -webkit-transform:rotate(360deg);
                 -ms-transform:rotate(360deg);
-                    transform:rotateZ(360deg);
+                    transform:rotate(360deg);
+        }
+        .vcon-shield:hover{
+            box-shadow:none;
+            border-radius:0;
+            border-bottom-right-radius:.25em;
+            border-bottom-left-radius:1em;
+            border-top-right-radius:1em;
+            -webkit-transform:translateY(-25%) rotate(45deg);
+                -ms-transform:translateY(-25%) rotate(45deg);
+                    transform:translateY(-25%) rotate(45deg);
         }
     </style>
 </head>
@@ -96,6 +106,14 @@
         <figure class="b">
             <i class="i vcon-close"></i>
             <figcaption class="bc">.vcon-close</figcaption>
+        </figure>
+        <figure class="b">
+            <i class="i vcon-home"></i>
+            <figcaption class="bc">.vcon-home</figcaption>
+        </figure>
+        <figure class="b">
+            <i class="i vcon-shield"></i>
+            <figcaption class="bc">.vcon-shield</figcaption>
         </figure>
         <figure class="b">
             <i class="i vcon-left"></i>
@@ -133,6 +151,10 @@
             <i class="i vcon-fail"></i>
             <figcaption class="bc">.vcon-fail</figcaption>
         </figure>
+        <figure class="b">
+            <i class="i vcon-loading"></i>
+            <figcaption class="bc">.vcon-loading</figcaption>
+        </figure>
     </div>
 
     <div class="c">
@@ -152,6 +174,14 @@
         <figure class="b">
             <i class="i vcm-close"></i>
             <figcaption class="bc">.vcm-close</figcaption>
+        </figure>
+        <figure class="b">
+            <i class="i vcm-home"></i>
+            <figcaption class="bc">.vcm-home</figcaption>
+        </figure>
+        <figure class="b">
+            <i class="i vcm-shield"></i>
+            <figcaption class="bc">.vcm-shield</figcaption>
         </figure>
         <figure class="b">
             <i class="i vcm-left"></i>
@@ -188,6 +218,10 @@
         <figure class="b">
             <i class="i vcm-fail"></i>
             <figcaption class="bc">.vcm-fail</figcaption>
+        </figure>
+        <figure class="b">
+            <i class="i vcm-loading"></i>
+            <figcaption class="bc">.vcm-loading</figcaption>
         </figure>
     </div>
 
