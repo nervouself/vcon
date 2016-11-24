@@ -1183,21 +1183,19 @@
             transform:translate(-120%,-35%);
     box-shadow:.075em .075em 0 0 #cbb417;
 }
-
 @-webkit-keyframes shield-beating {
     0%   {-webkit-transform:translateY(-25%) rotate(45deg) scale(1);transform:translateY(-25%) rotate(45deg) scale(1);}
     74%  {-webkit-transform:translateY(-25%) rotate(45deg) scale(1);transform:translateY(-25%) rotate(45deg) scale(1);}
-    75%  {-webkit-transform:translateY(-25%) rotate(45deg) scale(1.4);transform:translateY(-25%) rotate(45deg) scale(1.4);}
-    82%  {-webkit-transform:translateY(-25%) rotate(45deg) scale(0.8);transform:translateY(-25%) rotate(45deg) scale(0.8);}
-    90%  {-webkit-transform:translateY(-25%) rotate(45deg) scale(1.2);transform:translateY(-25%) rotate(45deg) scale(1.2);}
+    75%  {-webkit-transform:translateY(-35%) rotate(45deg) scale(1.4);transform:translateY(-35%) rotate(45deg) scale(1.4);}
+    82%  {-webkit-transform:translateY(-20%) rotate(45deg) scale(0.8);transform:translateY(-20%) rotate(45deg) scale(0.8);}
+    90%  {-webkit-transform:translateY(-30%) rotate(45deg) scale(1.2);transform:translateY(-30%) rotate(45deg) scale(1.2);}
     100% {-webkit-transform:translateY(-25%) rotate(45deg) scale(1);transform:translateY(-25%) rotate(45deg) scale(1);}
 }
-
 @keyframes shield-beating {
     0%   {-webkit-transform:translateY(-25%) rotate(45deg) scale(1);transform:translateY(-25%) rotate(45deg) scale(1);}
     74%  {-webkit-transform:translateY(-25%) rotate(45deg) scale(1);transform:translateY(-25%) rotate(45deg) scale(1);}
-    75%  {-webkit-transform:translateY(-25%) rotate(45deg) scale(1.4);transform:translateY(-25%) rotate(45deg) scale(1.4);}
-    82%  {-webkit-transform:translateY(-25%) rotate(45deg) scale(0.8);transform:translateY(-25%) rotate(45deg) scale(0.8);}
-    90%  {-webkit-transform:translateY(-25%) rotate(45deg) scale(1.2);transform:translateY(-25%) rotate(45deg) scale(1.2);}
+    75%  {-webkit-transform:translateY(-35%) rotate(45deg) scale(1.4);transform:translateY(-35%) rotate(45deg) scale(1.4);}
+    82%  {-webkit-transform:translateY(-20%) rotate(45deg) scale(0.8);transform:translateY(-20%) rotate(45deg) scale(0.8);}
+    90%  {-webkit-transform:translateY(-30%) rotate(45deg) scale(1.2);transform:translateY(-30%) rotate(45deg) scale(1.2);}
     100% {-webkit-transform:translateY(-25%) rotate(45deg) scale(1);transform:translateY(-25%) rotate(45deg) scale(1);}
 }
