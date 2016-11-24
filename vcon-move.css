@@ -254,20 +254,290 @@
     75%  {-webkit-transform:rotate(0);transform:rotate(0);}
     100% {-webkit-transform:rotate(720deg);transform:rotate(720deg);}
 }
-
-
-
-/* L */
-.vcm-done-l{
+.vcm-done,
+.vcm-fail{
     border:1px solid #c1c2c3;
     border-radius:50%;
-    font-size:200px;
 }
-.vcm-done-l:before{
+.vcm-done:before,
+.vcm-fail:before{
     width:.55em;
     height:.55em;
     box-sizing:border-box;
     border-radius:50%;
+}
+.vcm-done:before{
+    border:.05em solid #e4007f;
+    border-right-color:transparent;
+    -webkit-transform:translate(-50%,-50%) rotate(-30deg);
+        -ms-transform:translate(-50%,-50%) rotate(-30deg);
+            transform:translate(-50%,-50%) rotate(-30deg);
+    -webkit-animation: 3s done-before infinite;
+            animation: 3s done-before infinite;
+}
+@-webkit-keyframes done-before {
+    0%   {border:.05em solid #e4007f;border-right-color: transparent;}
+    75%  {border:.05em solid #e4007f;border-right-color: transparent;}
+    86%  {border:.05em solid transparent;}
+    89%  {border:.05em solid #e4007f;border-left-color: transparent;border-bottom-color: transparent;border-right-color: transparent;}
+    92%  {border:.05em solid #e4007f;border-bottom-color: transparent;border-right-color: transparent;}
+    95%  {border:.05em solid #e4007f;border-right-color: transparent;}
+    100% {border:.05em solid #e4007f;border-right-color: transparent;}
+}
+@keyframes done-before {
+    0%   {border:.05em solid #e4007f;border-right-color: transparent;}
+    75%  {border:.05em solid #e4007f;border-right-color: transparent;}
+    86%  {border:.05em solid transparent;}
+    89%  {border:.05em solid #e4007f;border-left-color: transparent;border-bottom-color: transparent;border-right-color: transparent;}
+    92%  {border:.05em solid #e4007f;border-bottom-color: transparent;border-right-color: transparent;}
+    95%  {border:.05em solid #e4007f;border-right-color: transparent;}
+    100% {border:.05em solid #e4007f;border-right-color: transparent;}
+}
+.vcm-done:after{
+    width:.13em;
+    height:.26em;
+    border:.05em solid #e4007f;
+    border-top-color:transparent;
+    border-left-color:transparent;
+    -webkit-transform:translate(-40%,-65%) rotate(45deg);
+        -ms-transform:translate(-40%,-65%) rotate(45deg);
+            transform:translate(-40%,-65%) rotate(45deg);
+    -webkit-animation: 3s done-after infinite;
+            animation: 3s done-after infinite;
+}
+@-webkit-keyframes done-after {
+    0%   {border:.05em solid #e4007f;border-top-color:transparent;border-left-color:transparent;}
+    75%  {border:.05em solid #e4007f;border-top-color:transparent;border-left-color:transparent;}
+    86%  {border:.05em solid transparent;}
+    95%  {border:.05em solid transparent;}
+    98%  {border:.05em solid #e4007f;border-right-color:transparent;border-top-color:transparent;border-left-color:transparent;}
+    100% {border:.05em solid #e4007f;border-top-color:transparent;border-left-color:transparent;}
+}
+@keyframes done-after {
+    0%   {border:.05em solid #e4007f;border-top-color:transparent;border-left-color:transparent;}
+    75%  {border:.05em solid #e4007f;border-top-color:transparent;border-left-color:transparent;}
+    86%  {border:.05em solid transparent;}
+    95%  {border:.05em solid transparent;}
+    98%  {border:.05em solid #e4007f;border-right-color:transparent;border-top-color:transparent;border-left-color:transparent;}
+    100% {border:.05em solid #e4007f;border-top-color:transparent;border-left-color:transparent;}
+}
+.vcm-fail:before{
+    border:.05em solid #979797;
+    border-right-color:transparent;
+    -webkit-transform:translate(-50%,-50%) rotate(-30deg);
+        -ms-transform:translate(-50%,-50%) rotate(-30deg);
+            transform:translate(-50%,-50%) rotate(-30deg);
+    -webkit-animation: 3s fail-before infinite;
+            animation: 3s fail-before infinite;
+}
+@-webkit-keyframes fail-before {
+    0%   {border:.05em solid #979797;border-right-color: transparent;}
+    75%  {border:.05em solid #979797;border-right-color: transparent;}
+    86%  {border:.05em solid transparent;}
+    89%  {border:.05em solid #979797;border-left-color: transparent;border-bottom-color: transparent;border-right-color: transparent;}
+    92%  {border:.05em solid #979797;border-bottom-color: transparent;border-right-color: transparent;}
+    95%  {border:.05em solid #979797;border-right-color: transparent;}
+    100% {border:.05em solid #979797;border-right-color: transparent;}
+}
+@keyframes fail-before {
+    0%   {border:.05em solid #979797;border-right-color: transparent;}
+    75%  {border:.05em solid #979797;border-right-color: transparent;}
+    86%  {border:.05em solid transparent;}
+    89%  {border:.05em solid #979797;border-left-color: transparent;border-bottom-color: transparent;border-right-color: transparent;}
+    92%  {border:.05em solid #979797;border-bottom-color: transparent;border-right-color: transparent;}
+    95%  {border:.05em solid #979797;border-right-color: transparent;}
+    100% {border:.05em solid #979797;border-right-color: transparent;}
+}
+.vcm-fail:after{
+    width:.04em;
+    height:.04em;
+    border-radius:50%;
+    -webkit-animation: 3s fail-after infinite;
+            animation: 3s fail-after infinite;
+}
+@-webkit-keyframes fail-after {
+    0%   {background:#979797;
+        box-shadow:.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+        ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+        ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+        ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+        ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+        ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;}
+    75%  {background:#979797;
+        box-shadow:.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+        ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+        ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+        ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+        ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+        ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;}
+    86%  {background:transparent;
+        box-shadow:.01em .01em transparent,.02em .02em transparent,.03em .03em transparent
+        ,.04em .04em transparent,.05em .05em transparent,.06em .06em transparent
+        ,.07em .07em transparent,.08em .08em transparent,.09em .09em transparent,.1em .1em transparent
+        ,-.01em -.01em transparent,-.02em -.02em transparent,-.03em -.03em transparent
+        ,-.04em -.04em transparent,-.05em -.05em transparent,-.06em -.06em transparent
+        ,-.07em -.07em transparent,-.08em -.08em transparent,-.09em -.09em transparent,-.1em -.1em transparent
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    95%  {background:transparent;
+        box-shadow:.01em .01em transparent,.02em .02em transparent,.03em .03em transparent
+        ,.04em .04em transparent,.05em .05em transparent,.06em .06em transparent
+        ,.07em .07em transparent,.08em .08em transparent,.09em .09em transparent,.1em .1em transparent
+        ,-.01em -.01em transparent,-.02em -.02em transparent,-.03em -.03em transparent
+        ,-.04em -.04em transparent,-.05em -.05em transparent,-.06em -.06em transparent
+        ,-.07em -.07em transparent,-.08em -.08em transparent,-.09em -.09em transparent,-.1em -.1em transparent
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    98%  {background:#979797;
+        box-shadow:.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    100% {background:#979797;
+        box-shadow:.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+        ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+        ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+        ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+        ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+        ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;}
+}
+@keyframes fail-after {
+    0%   {background:#979797;
+        box-shadow:.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+        ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+        ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+        ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+        ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+        ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;}
+    75%  {background:#979797;
+        box-shadow:.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+        ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+        ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+        ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+        ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+        ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;}
+    86%  {background:transparent;
+        box-shadow:.01em .01em transparent,.02em .02em transparent,.03em .03em transparent
+        ,.04em .04em transparent,.05em .05em transparent,.06em .06em transparent
+        ,.07em .07em transparent,.08em .08em transparent,.09em .09em transparent,.1em .1em transparent
+        ,-.01em -.01em transparent,-.02em -.02em transparent,-.03em -.03em transparent
+        ,-.04em -.04em transparent,-.05em -.05em transparent,-.06em -.06em transparent
+        ,-.07em -.07em transparent,-.08em -.08em transparent,-.09em -.09em transparent,-.1em -.1em transparent
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    95%  {background:transparent;
+        box-shadow:.01em .01em transparent,.02em .02em transparent,.03em .03em transparent
+        ,.04em .04em transparent,.05em .05em transparent,.06em .06em transparent
+        ,.07em .07em transparent,.08em .08em transparent,.09em .09em transparent,.1em .1em transparent
+        ,-.01em -.01em transparent,-.02em -.02em transparent,-.03em -.03em transparent
+        ,-.04em -.04em transparent,-.05em -.05em transparent,-.06em -.06em transparent
+        ,-.07em -.07em transparent,-.08em -.08em transparent,-.09em -.09em transparent,-.1em -.1em transparent
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    98%  {background:#979797;
+        box-shadow:.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    100% {background:#979797;
+        box-shadow:.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+        ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+        ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+        ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+        ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+        ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;}
+}
+
+
+/* L */
+.vcm-done-l,
+.vcm-fail-l{
+    border:1px solid #c1c2c3;
+    border-radius:50%;
+    font-size:200px;
+}
+.vcm-done-l:after,
+.vcm-fail-l:after{
+    width:.0345em;
+    height:.0345em;
+    border-radius:50%;
+}
+.vcm-done-l:before,
+.vcm-fail-l:before{
+    width:.55em;
+    height:.55em;
+    box-sizing:border-box;
+    border-radius:50%;
+}
+.vcm-done-l:before{
     border:.035em solid #e4007f;
     border-right-color: transparent;
     -webkit-animation:3s done-l-before infinite;
@@ -275,8 +545,8 @@
 }
 @-webkit-keyframes done-l-before {
     0%   {border:.035em solid #e4007f;border-right-color: transparent;}
-    85.99%  {border:.035em solid #e4007f;border-right-color: transparent;}
-    86%  {border:.035em solid #e4007f;border-top-color: transparent;border-left-color: transparent;border-bottom-color: transparent;border-right-color: transparent;}
+    75%  {border:.035em solid #e4007f;border-right-color: transparent;}
+    86%  {border:.035em solid transparent;}
     89%  {border:.035em solid #e4007f;border-left-color: transparent;border-bottom-color: transparent;border-right-color: transparent;}
     92%  {border:.035em solid #e4007f;border-bottom-color: transparent;border-right-color: transparent;}
     95%  {border:.035em solid #e4007f;border-right-color: transparent;}
@@ -284,131 +554,249 @@
 }
 @keyframes done-l-before {
     0%   {border:.035em solid #e4007f;border-right-color: transparent;}
-    85.99%  {border:.035em solid #e4007f;border-right-color: transparent;}
-    86%  {border:.035em solid #e4007f;border-top-color: transparent;border-left-color: transparent;border-bottom-color: transparent;border-right-color: transparent;}
+    75%  {border:.035em solid #e4007f;border-right-color: transparent;}
+    86%  {border:.035em solid transparent;}
     89%  {border:.035em solid #e4007f;border-left-color: transparent;border-bottom-color: transparent;border-right-color: transparent;}
     92%  {border:.035em solid #e4007f;border-bottom-color: transparent;border-right-color: transparent;}
     95%  {border:.035em solid #e4007f;border-right-color: transparent;}
     100% {border:.035em solid #e4007f;border-right-color: transparent;}
 }
 .vcm-done-l:after{
-    width:.0345em;
-    height:.0345em;
-    border-radius:50%;
     -webkit-animation:3s done-l-after infinite;
             animation:3s done-l-after infinite;
 }
+
 @-webkit-keyframes done-l-after {
-    0%   {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.257em .022em #e4007f,.256em .028em #e4007f,.255em .035em #e4007f
+    0%   {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.256em .028em #e4007f
         ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
         ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
         ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
         ,.181em -.182em #e4007f
-        ,-.06em .11em #e4007f,-.055em .105em #e4007f,-.05em .1em #e4007f,-.045em .095em #e4007f,-.04em .09em #e4007f,-.035em .085em #e4007f
-        ,-.03em .08em #e4007f,-.025em .075em #e4007f,-.02em .07em #e4007f,-.015em .065em #e4007f,-.01em .06em #e4007f,-.005em .055em #e4007f,0 .05em #e4007f
-        ,.005em .045em #e4007f,.01em .04em #e4007f,.015em .035em #e4007f,.02em .03em #e4007f,.025em .025em #e4007f,.03em .02em #e4007f,.035em .015em #e4007f
-        ,.04em .01em #e4007f,.045em .005em #e4007f,.05em 0 #e4007f,.055em -.005em #e4007f,.06em -.01em #e4007f,.065em -.015em #e4007f,.07em -.02em #e4007f
-        ,.075em -.025em #e4007f,.08em -.03em #e4007f,.085em -.035em #e4007f,.09em -.04em #e4007f,.095em -.045em #e4007f,.1em -.05em #e4007f,.105em -.055em #e4007f
-        ,.11em -.06em #e4007f,.115em -.065em #e4007f,.12em -.07em #e4007f,.125em -.075em #e4007f,.13em -.08em #e4007f,.135em -.085em #e4007f
-        ,-.065em .11em #e4007f,-.07em .105em #e4007f,-.075em .1em #e4007f,-.08em .095em #e4007f,-.085em .09em #e4007f,-.09em .085em #e4007f
-        ,-.095em .08em #e4007f,-.1em .075em #e4007f,-.105em .07em #e4007f,-.11em .065em #e4007f,-.115em .06em #e4007f,-.12em .055em #e4007f,-.125em .05em #e4007f
-        ,-.13em .045em #e4007f,-.135em .04em #e4007f,-.14em .035em #e4007f,-.145em .03em #e4007f,-.15em .025em #e4007f,-.155em .02em #e4007f,-.16em .015em #e4007f;}
-    85.99%  {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.257em .022em #e4007f,.256em .028em #e4007f,.255em .035em #e4007f
+        ,-.06em .11em #e4007f,-.05em .1em #e4007f,-.04em .09em #e4007f
+        ,-.03em .08em #e4007f,-.02em .07em #e4007f,-.01em .06em #e4007f,0 .05em #e4007f
+        ,.01em .04em #e4007f,.02em .03em #e4007f,.03em .02em #e4007f
+        ,.04em .01em #e4007f,.05em 0 #e4007f,.06em -.01em #e4007f,.07em -.02em #e4007f
+        ,.08em -.03em #e4007f,.09em -.04em #e4007f,.1em -.05em #e4007f
+        ,.11em -.06em #e4007f,.12em -.07em #e4007f,.13em -.08em #e4007f
+        ,-.07em .105em #e4007f,-.08em .095em #e4007f,-.09em .085em #e4007f
+        ,-.1em .075em #e4007f,-.11em .065em #e4007f,-.12em .055em #e4007f
+        ,-.13em .045em #e4007f,-.14em .035em #e4007f,-.15em .025em #e4007f,-.16em .015em #e4007f;}
+    75%  {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.256em .028em #e4007f
         ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
         ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
         ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
         ,.181em -.182em #e4007f
-        ,-.06em .11em #e4007f,-.055em .105em #e4007f,-.05em .1em #e4007f,-.045em .095em #e4007f,-.04em .09em #e4007f,-.035em .085em #e4007f
-        ,-.03em .08em #e4007f,-.025em .075em #e4007f,-.02em .07em #e4007f,-.015em .065em #e4007f,-.01em .06em #e4007f,-.005em .055em #e4007f,0 .05em #e4007f
-        ,.005em .045em #e4007f,.01em .04em #e4007f,.015em .035em #e4007f,.02em .03em #e4007f,.025em .025em #e4007f,.03em .02em #e4007f,.035em .015em #e4007f
-        ,.04em .01em #e4007f,.045em .005em #e4007f,.05em 0 #e4007f,.055em -.005em #e4007f,.06em -.01em #e4007f,.065em -.015em #e4007f,.07em -.02em #e4007f
-        ,.075em -.025em #e4007f,.08em -.03em #e4007f,.085em -.035em #e4007f,.09em -.04em #e4007f,.095em -.045em #e4007f,.1em -.05em #e4007f,.105em -.055em #e4007f
-        ,.11em -.06em #e4007f,.115em -.065em #e4007f,.12em -.07em #e4007f,.125em -.075em #e4007f,.13em -.08em #e4007f,.135em -.085em #e4007f
-        ,-.065em .11em #e4007f,-.07em .105em #e4007f,-.075em .1em #e4007f,-.08em .095em #e4007f,-.085em .09em #e4007f,-.09em .085em #e4007f
-        ,-.095em .08em #e4007f,-.1em .075em #e4007f,-.105em .07em #e4007f,-.11em .065em #e4007f,-.115em .06em #e4007f,-.12em .055em #e4007f,-.125em .05em #e4007f
-        ,-.13em .045em #e4007f,-.135em .04em #e4007f,-.14em .035em #e4007f,-.145em .03em #e4007f,-.15em .025em #e4007f,-.155em .02em #e4007f,-.16em .015em #e4007f;}
-    86%  {box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.257em .022em transparent,.256em .028em transparent,.255em .035em transparent
+        ,-.06em .11em #e4007f,-.05em .1em #e4007f,-.04em .09em #e4007f
+        ,-.03em .08em #e4007f,-.02em .07em #e4007f,-.01em .06em #e4007f,0 .05em #e4007f
+        ,.01em .04em #e4007f,.02em .03em #e4007f,.03em .02em #e4007f
+        ,.04em .01em #e4007f,.05em 0 #e4007f,.06em -.01em #e4007f,.07em -.02em #e4007f
+        ,.08em -.03em #e4007f,.09em -.04em #e4007f,.1em -.05em #e4007f
+        ,.11em -.06em #e4007f,.12em -.07em #e4007f,.13em -.08em #e4007f
+        ,-.07em .105em #e4007f,-.08em .095em #e4007f,-.09em .085em #e4007f
+        ,-.1em .075em #e4007f,-.11em .065em #e4007f,-.12em .055em #e4007f
+        ,-.13em .045em #e4007f,-.14em .035em #e4007f,-.15em .025em #e4007f,-.16em .015em #e4007f;}
+    86%  {box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.256em .028em transparent
         ,.255em .04em transparent,.254em .045em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
         ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
         ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
-        ,.181em -.182em #e4007f;}
-    94.99%  {box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.257em .022em transparent,.256em .028em transparent,.255em .035em transparent
+        ,.181em -.182em transparent
+        ,-.06em .11em transparent,-.05em .1em transparent,-.04em .09em transparent
+        ,-.03em .08em transparent,-.02em .07em transparent,-.01em .06em transparent,0 .05em transparent
+        ,.01em .04em transparent,.02em .03em transparent,.03em .02em transparent
+        ,.04em .01em transparent,.05em 0 transparent,.06em -.01em transparent,.07em -.02em transparent
+        ,.08em -.03em transparent,.09em -.04em transparent,.1em -.05em transparent
+        ,.11em -.06em transparent,.12em -.07em transparent,.13em -.08em transparent
+        ,-.07em .105em transparent,-.08em .095em transparent,-.09em .085em transparent
+        ,-.1em .075em transparent,-.11em .065em transparent,-.12em .055em transparent
+        ,-.13em .045em transparent,-.14em .035em transparent,-.15em .025em transparent,-.16em .015em transparent;}
+    89%  {box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.256em .028em transparent
         ,.255em .04em transparent,.254em .045em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
         ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
         ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
-        ,.181em -.182em #e4007f;}
-    95%  {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.257em .022em #e4007f,.256em .028em #e4007f,.255em .035em #e4007f
-        ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
-        ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
-        ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
-        ,.181em -.182em #e4007f;}
-    100% {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.257em .022em #e4007f,.256em .028em #e4007f,.255em .035em #e4007f
-        ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
-        ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
-        ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
-        ,.181em -.182em #e4007f;}
-}
-@keyframes done-l-after {
-    0%   {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.257em .022em #e4007f,.256em .028em #e4007f,.255em .035em #e4007f
+        ,.181em -.182em #e4007f
+        ,-.06em .11em transparent,-.05em .1em transparent,-.04em .09em transparent
+        ,-.03em .08em transparent,-.02em .07em transparent,-.01em .06em transparent,0 .05em transparent
+        ,.01em .04em transparent,.02em .03em transparent,.03em .02em transparent
+        ,.04em .01em transparent,.05em 0 transparent,.06em -.01em transparent,.07em -.02em transparent
+        ,.08em -.03em transparent,.09em -.04em transparent,.1em -.05em transparent
+        ,.11em -.06em transparent,.12em -.07em transparent,.13em -.08em transparent
+        ,-.07em .105em transparent,-.08em .095em transparent,-.09em .085em transparent
+        ,-.1em .075em transparent,-.11em .065em transparent,-.12em .055em transparent
+        ,-.13em .045em transparent,-.14em .035em transparent,-.15em .025em transparent,-.16em .015em transparent;}
+    92%  {box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.256em .028em transparent
+        ,.255em .04em transparent,.254em .045em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
+        ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
+        ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
+        ,.181em -.182em #e4007f
+        ,-.06em .11em transparent,-.05em .1em transparent,-.04em .09em transparent
+        ,-.03em .08em transparent,-.02em .07em transparent,-.01em .06em transparent,0 .05em transparent
+        ,.01em .04em transparent,.02em .03em transparent,.03em .02em transparent
+        ,.04em .01em transparent,.05em 0 transparent,.06em -.01em transparent,.07em -.02em transparent
+        ,.08em -.03em transparent,.09em -.04em transparent,.1em -.05em transparent
+        ,.11em -.06em transparent,.12em -.07em transparent,.13em -.08em transparent
+        ,-.07em .105em transparent,-.08em .095em transparent,-.09em .085em transparent
+        ,-.1em .075em transparent,-.11em .065em transparent,-.12em .055em transparent
+        ,-.13em .045em transparent,-.14em .035em transparent,-.15em .025em transparent,-.16em .015em transparent;}
+    95%  {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.256em .028em #e4007f
         ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
         ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
         ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
         ,.181em -.182em #e4007f
-        ,-.06em .11em #e4007f,-.055em .105em #e4007f,-.05em .1em #e4007f,-.045em .095em #e4007f,-.04em .09em #e4007f,-.035em .085em #e4007f
-        ,-.03em .08em #e4007f,-.025em .075em #e4007f,-.02em .07em #e4007f,-.015em .065em #e4007f,-.01em .06em #e4007f,-.005em .055em #e4007f,0 .05em #e4007f
-        ,.005em .045em #e4007f,.01em .04em #e4007f,.015em .035em #e4007f,.02em .03em #e4007f,.025em .025em #e4007f,.03em .02em #e4007f,.035em .015em #e4007f
-        ,.04em .01em #e4007f,.045em .005em #e4007f,.05em 0 #e4007f,.055em -.005em #e4007f,.06em -.01em #e4007f,.065em -.015em #e4007f,.07em -.02em #e4007f
-        ,.075em -.025em #e4007f,.08em -.03em #e4007f,.085em -.035em #e4007f,.09em -.04em #e4007f,.095em -.045em #e4007f,.1em -.05em #e4007f,.105em -.055em #e4007f
-        ,.11em -.06em #e4007f,.115em -.065em #e4007f,.12em -.07em #e4007f,.125em -.075em #e4007f,.13em -.08em #e4007f,.135em -.085em #e4007f
-        ,-.065em .11em #e4007f,-.07em .105em #e4007f,-.075em .1em #e4007f,-.08em .095em #e4007f,-.085em .09em #e4007f,-.09em .085em #e4007f
-        ,-.095em .08em #e4007f,-.1em .075em #e4007f,-.105em .07em #e4007f,-.11em .065em #e4007f,-.115em .06em #e4007f,-.12em .055em #e4007f,-.125em .05em #e4007f
-        ,-.13em .045em #e4007f,-.135em .04em #e4007f,-.14em .035em #e4007f,-.145em .03em #e4007f,-.15em .025em #e4007f,-.155em .02em #e4007f,-.16em .015em #e4007f;}
-    85.99%  {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.257em .022em #e4007f,.256em .028em #e4007f,.255em .035em #e4007f
+        ,-.06em .11em transparent,-.05em .1em transparent,-.04em .09em transparent
+        ,-.03em .08em transparent,-.02em .07em transparent,-.01em .06em transparent,0 .05em transparent
+        ,.01em .04em transparent,.02em .03em transparent,.03em .02em transparent
+        ,.04em .01em transparent,.05em 0 transparent,.06em -.01em transparent,.07em -.02em transparent
+        ,.08em -.03em transparent,.09em -.04em transparent,.1em -.05em transparent
+        ,.11em -.06em transparent,.12em -.07em transparent,.13em -.08em transparent
+        ,-.07em .105em transparent,-.08em .095em transparent,-.09em .085em transparent
+        ,-.1em .075em transparent,-.11em .065em transparent,-.12em .055em transparent
+        ,-.13em .045em transparent,-.14em .035em transparent,-.15em .025em transparent,-.16em .015em transparent;}
+    98%  {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.256em .028em #e4007f
         ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
         ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
         ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
         ,.181em -.182em #e4007f
-        ,-.06em .11em #e4007f,-.055em .105em #e4007f,-.05em .1em #e4007f,-.045em .095em #e4007f,-.04em .09em #e4007f,-.035em .085em #e4007f
-        ,-.03em .08em #e4007f,-.025em .075em #e4007f,-.02em .07em #e4007f,-.015em .065em #e4007f,-.01em .06em #e4007f,-.005em .055em #e4007f,0 .05em #e4007f
-        ,.005em .045em #e4007f,.01em .04em #e4007f,.015em .035em #e4007f,.02em .03em #e4007f,.025em .025em #e4007f,.03em .02em #e4007f,.035em .015em #e4007f
-        ,.04em .01em #e4007f,.045em .005em #e4007f,.05em 0 #e4007f,.055em -.005em #e4007f,.06em -.01em #e4007f,.065em -.015em #e4007f,.07em -.02em #e4007f
-        ,.075em -.025em #e4007f,.08em -.03em #e4007f,.085em -.035em #e4007f,.09em -.04em #e4007f,.095em -.045em #e4007f,.1em -.05em #e4007f,.105em -.055em #e4007f
-        ,.11em -.06em #e4007f,.115em -.065em #e4007f,.12em -.07em #e4007f,.125em -.075em #e4007f,.13em -.08em #e4007f,.135em -.085em #e4007f
-        ,-.065em .11em #e4007f,-.07em .105em #e4007f,-.075em .1em #e4007f,-.08em .095em #e4007f,-.085em .09em #e4007f,-.09em .085em #e4007f
-        ,-.095em .08em #e4007f,-.1em .075em #e4007f,-.105em .07em #e4007f,-.11em .065em #e4007f,-.115em .06em #e4007f,-.12em .055em #e4007f,-.125em .05em #e4007f
-        ,-.13em .045em #e4007f,-.135em .04em #e4007f,-.14em .035em #e4007f,-.145em .03em #e4007f,-.15em .025em #e4007f,-.155em .02em #e4007f,-.16em .015em #e4007f;}
-    86%  {box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.257em .022em transparent,.256em .028em transparent,.255em .035em transparent
-        ,.255em .04em transparent,.254em .045em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
-        ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
-        ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
-        ,.181em -.182em #e4007f;}
-    94.99%  {box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.257em .022em transparent,.256em .028em transparent,.255em .035em transparent
-        ,.255em .04em transparent,.254em .045em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
-        ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
-        ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
-        ,.181em -.182em #e4007f;}
-    95%  {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.257em .022em #e4007f,.256em .028em #e4007f,.255em .035em #e4007f
+        ,-.06em .11em transparent,-.05em .1em transparent,-.04em .09em transparent
+        ,-.03em .08em transparent,-.02em .07em transparent,-.01em .06em transparent,0 .05em transparent
+        ,.01em .04em transparent,.02em .03em transparent,.03em .02em transparent
+        ,.04em .01em transparent,.05em 0 transparent,.06em -.01em transparent,.07em -.02em transparent
+        ,.08em -.03em transparent,.09em -.04em transparent,.1em -.05em transparent
+        ,.11em -.06em transparent,.12em -.07em transparent,.13em -.08em transparent
+        ,-.07em .105em #e4007f,-.08em .095em #e4007f,-.09em .085em #e4007f
+        ,-.1em .075em #e4007f,-.11em .065em #e4007f,-.12em .055em #e4007f
+        ,-.13em .045em #e4007f,-.14em .035em #e4007f,-.15em .025em #e4007f,-.16em .015em #e4007f;}
+    100% {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.256em .028em #e4007f
         ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
         ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
         ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
-        ,.181em -.182em #e4007f;}
-    100% {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.257em .022em #e4007f,.256em .028em #e4007f,.255em .035em #e4007f
-        ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
-        ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
-        ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
-        ,.181em -.182em #e4007f;}
+        ,.181em -.182em #e4007f
+        ,-.06em .11em #e4007f,-.05em .1em #e4007f,-.04em .09em #e4007f
+        ,-.03em .08em #e4007f,-.02em .07em #e4007f,-.01em .06em #e4007f,0 .05em #e4007f
+        ,.01em .04em #e4007f,.02em .03em #e4007f,.03em .02em #e4007f
+        ,.04em .01em #e4007f,.05em 0 #e4007f,.06em -.01em #e4007f,.07em -.02em #e4007f
+        ,.08em -.03em #e4007f,.09em -.04em #e4007f,.1em -.05em #e4007f
+        ,.11em -.06em #e4007f,.12em -.07em #e4007f,.13em -.08em #e4007f
+        ,-.07em .105em #e4007f,-.08em .095em #e4007f,-.09em .085em #e4007f
+        ,-.1em .075em #e4007f,-.11em .065em #e4007f,-.12em .055em #e4007f
+        ,-.13em .045em #e4007f,-.14em .035em #e4007f,-.15em .025em #e4007f,-.16em .015em #e4007f;}
 }
 
-.vcm-fail-l{
-    border:1px solid #c1c2c3;
-    border-radius:50%;
-    font-size:200px;
+@keyframes done-l-after {
+    0%   {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.256em .028em #e4007f
+        ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
+        ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
+        ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
+        ,.181em -.182em #e4007f
+        ,-.06em .11em #e4007f,-.05em .1em #e4007f,-.04em .09em #e4007f
+        ,-.03em .08em #e4007f,-.02em .07em #e4007f,-.01em .06em #e4007f,0 .05em #e4007f
+        ,.01em .04em #e4007f,.02em .03em #e4007f,.03em .02em #e4007f
+        ,.04em .01em #e4007f,.05em 0 #e4007f,.06em -.01em #e4007f,.07em -.02em #e4007f
+        ,.08em -.03em #e4007f,.09em -.04em #e4007f,.1em -.05em #e4007f
+        ,.11em -.06em #e4007f,.12em -.07em #e4007f,.13em -.08em #e4007f
+        ,-.07em .105em #e4007f,-.08em .095em #e4007f,-.09em .085em #e4007f
+        ,-.1em .075em #e4007f,-.11em .065em #e4007f,-.12em .055em #e4007f
+        ,-.13em .045em #e4007f,-.14em .035em #e4007f,-.15em .025em #e4007f,-.16em .015em #e4007f;}
+    75%  {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.256em .028em #e4007f
+        ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
+        ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
+        ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
+        ,.181em -.182em #e4007f
+        ,-.06em .11em #e4007f,-.05em .1em #e4007f,-.04em .09em #e4007f
+        ,-.03em .08em #e4007f,-.02em .07em #e4007f,-.01em .06em #e4007f,0 .05em #e4007f
+        ,.01em .04em #e4007f,.02em .03em #e4007f,.03em .02em #e4007f
+        ,.04em .01em #e4007f,.05em 0 #e4007f,.06em -.01em #e4007f,.07em -.02em #e4007f
+        ,.08em -.03em #e4007f,.09em -.04em #e4007f,.1em -.05em #e4007f
+        ,.11em -.06em #e4007f,.12em -.07em #e4007f,.13em -.08em #e4007f
+        ,-.07em .105em #e4007f,-.08em .095em #e4007f,-.09em .085em #e4007f
+        ,-.1em .075em #e4007f,-.11em .065em #e4007f,-.12em .055em #e4007f
+        ,-.13em .045em #e4007f,-.14em .035em #e4007f,-.15em .025em #e4007f,-.16em .015em #e4007f;}
+    86%  {box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.256em .028em transparent
+        ,.255em .04em transparent,.254em .045em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
+        ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
+        ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
+        ,.181em -.182em transparent
+        ,-.06em .11em transparent,-.05em .1em transparent,-.04em .09em transparent
+        ,-.03em .08em transparent,-.02em .07em transparent,-.01em .06em transparent,0 .05em transparent
+        ,.01em .04em transparent,.02em .03em transparent,.03em .02em transparent
+        ,.04em .01em transparent,.05em 0 transparent,.06em -.01em transparent,.07em -.02em transparent
+        ,.08em -.03em transparent,.09em -.04em transparent,.1em -.05em transparent
+        ,.11em -.06em transparent,.12em -.07em transparent,.13em -.08em transparent
+        ,-.07em .105em transparent,-.08em .095em transparent,-.09em .085em transparent
+        ,-.1em .075em transparent,-.11em .065em transparent,-.12em .055em transparent
+        ,-.13em .045em transparent,-.14em .035em transparent,-.15em .025em transparent,-.16em .015em transparent;}
+    89%  {box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.256em .028em transparent
+        ,.255em .04em transparent,.254em .045em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
+        ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
+        ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
+        ,.181em -.182em #e4007f
+        ,-.06em .11em transparent,-.05em .1em transparent,-.04em .09em transparent
+        ,-.03em .08em transparent,-.02em .07em transparent,-.01em .06em transparent,0 .05em transparent
+        ,.01em .04em transparent,.02em .03em transparent,.03em .02em transparent
+        ,.04em .01em transparent,.05em 0 transparent,.06em -.01em transparent,.07em -.02em transparent
+        ,.08em -.03em transparent,.09em -.04em transparent,.1em -.05em transparent
+        ,.11em -.06em transparent,.12em -.07em transparent,.13em -.08em transparent
+        ,-.07em .105em transparent,-.08em .095em transparent,-.09em .085em transparent
+        ,-.1em .075em transparent,-.11em .065em transparent,-.12em .055em transparent
+        ,-.13em .045em transparent,-.14em .035em transparent,-.15em .025em transparent,-.16em .015em transparent;}
+    92%  {box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.256em .028em transparent
+        ,.255em .04em transparent,.254em .045em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
+        ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
+        ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
+        ,.181em -.182em #e4007f
+        ,-.06em .11em transparent,-.05em .1em transparent,-.04em .09em transparent
+        ,-.03em .08em transparent,-.02em .07em transparent,-.01em .06em transparent,0 .05em transparent
+        ,.01em .04em transparent,.02em .03em transparent,.03em .02em transparent
+        ,.04em .01em transparent,.05em 0 transparent,.06em -.01em transparent,.07em -.02em transparent
+        ,.08em -.03em transparent,.09em -.04em transparent,.1em -.05em transparent
+        ,.11em -.06em transparent,.12em -.07em transparent,.13em -.08em transparent
+        ,-.07em .105em transparent,-.08em .095em transparent,-.09em .085em transparent
+        ,-.1em .075em transparent,-.11em .065em transparent,-.12em .055em transparent
+        ,-.13em .045em transparent,-.14em .035em transparent,-.15em .025em transparent,-.16em .015em transparent;}
+    95%  {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.256em .028em #e4007f
+        ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
+        ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
+        ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
+        ,.181em -.182em #e4007f
+        ,-.06em .11em transparent,-.05em .1em transparent,-.04em .09em transparent
+        ,-.03em .08em transparent,-.02em .07em transparent,-.01em .06em transparent,0 .05em transparent
+        ,.01em .04em transparent,.02em .03em transparent,.03em .02em transparent
+        ,.04em .01em transparent,.05em 0 transparent,.06em -.01em transparent,.07em -.02em transparent
+        ,.08em -.03em transparent,.09em -.04em transparent,.1em -.05em transparent
+        ,.11em -.06em transparent,.12em -.07em transparent,.13em -.08em transparent
+        ,-.07em .105em transparent,-.08em .095em transparent,-.09em .085em transparent
+        ,-.1em .075em transparent,-.11em .065em transparent,-.12em .055em transparent
+        ,-.13em .045em transparent,-.14em .035em transparent,-.15em .025em transparent,-.16em .015em transparent;}
+    98%  {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.256em .028em #e4007f
+        ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
+        ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
+        ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
+        ,.181em -.182em #e4007f
+        ,-.06em .11em transparent,-.05em .1em transparent,-.04em .09em transparent
+        ,-.03em .08em transparent,-.02em .07em transparent,-.01em .06em transparent,0 .05em transparent
+        ,.01em .04em transparent,.02em .03em transparent,.03em .02em transparent
+        ,.04em .01em transparent,.05em 0 transparent,.06em -.01em transparent,.07em -.02em transparent
+        ,.08em -.03em transparent,.09em -.04em transparent,.1em -.05em transparent
+        ,.11em -.06em transparent,.12em -.07em transparent,.13em -.08em transparent
+        ,-.07em .105em #e4007f,-.08em .095em #e4007f,-.09em .085em #e4007f
+        ,-.1em .075em #e4007f,-.11em .065em #e4007f,-.12em .055em #e4007f
+        ,-.13em .045em #e4007f,-.14em .035em #e4007f,-.15em .025em #e4007f,-.16em .015em #e4007f;}
+    100% {box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.256em .028em #e4007f
+        ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
+        ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
+        ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
+        ,.181em -.182em #e4007f
+        ,-.06em .11em #e4007f,-.05em .1em #e4007f,-.04em .09em #e4007f
+        ,-.03em .08em #e4007f,-.02em .07em #e4007f,-.01em .06em #e4007f,0 .05em #e4007f
+        ,.01em .04em #e4007f,.02em .03em #e4007f,.03em .02em #e4007f
+        ,.04em .01em #e4007f,.05em 0 #e4007f,.06em -.01em #e4007f,.07em -.02em #e4007f
+        ,.08em -.03em #e4007f,.09em -.04em #e4007f,.1em -.05em #e4007f
+        ,.11em -.06em #e4007f,.12em -.07em #e4007f,.13em -.08em #e4007f
+        ,-.07em .105em #e4007f,-.08em .095em #e4007f,-.09em .085em #e4007f
+        ,-.1em .075em #e4007f,-.11em .065em #e4007f,-.12em .055em #e4007f
+        ,-.13em .045em #e4007f,-.14em .035em #e4007f,-.15em .025em #e4007f,-.16em .015em #e4007f;}
 }
+
 .vcm-fail-l:before{
-    width:.55em;
-    height:.55em;
-    box-sizing:border-box;
-    border-radius:50%;
     border:.035em solid #979797;
     border-right-color: transparent;
     -webkit-animation:3s fail-l-before infinite;
@@ -416,8 +804,8 @@
 }
 @-webkit-keyframes fail-l-before {
     0%   {border:.035em solid #979797;border-right-color: transparent;}
-    85.99%  {border:.035em solid #979797;border-right-color: transparent;}
-    86%  {border:.035em solid #979797;border-top-color: transparent;border-left-color: transparent;border-bottom-color: transparent;border-right-color: transparent;}
+    75%  {border:.035em solid #979797;border-right-color: transparent;}
+    86%  {border:.035em solid transparent;}
     89%  {border:.035em solid #979797;border-left-color: transparent;border-bottom-color: transparent;border-right-color: transparent;}
     92%  {border:.035em solid #979797;border-bottom-color: transparent;border-right-color: transparent;}
     95%  {border:.035em solid #979797;border-right-color: transparent;}
@@ -425,142 +813,309 @@
 }
 @keyframes fail-l-before {
     0%   {border:.035em solid #979797;border-right-color: transparent;}
-    85.99%  {border:.035em solid #979797;border-right-color: transparent;}
-    86%  {border:.035em solid #979797;border-top-color: transparent;border-left-color: transparent;border-bottom-color: transparent;border-right-color: transparent;}
+    75%  {border:.035em solid #979797;border-right-color: transparent;}
+    86%  {border:.035em solid transparent;}
     89%  {border:.035em solid #979797;border-left-color: transparent;border-bottom-color: transparent;border-right-color: transparent;}
     92%  {border:.035em solid #979797;border-bottom-color: transparent;border-right-color: transparent;}
     95%  {border:.035em solid #979797;border-right-color: transparent;}
     100% {border:.035em solid #979797;border-right-color: transparent;}
 }
 .vcm-fail-l:after{
-    width:.0345em;
-    height:.0345em;
-    border-radius:50%;
     background: #979797;
     -webkit-animation:3s fail-l-after infinite;
             animation:3s fail-l-after infinite;
 }
+
 @-webkit-keyframes fail-l-after {
-    0%  {background:#979797;
-        box-shadow:.258em 0 #979797,.258em .008em #979797,.257em .015em #979797,.257em .022em #979797,.256em .028em #979797,.255em .035em #979797
-        ,.255em .04em #979797,.254em .045em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
+    0%   {background: #979797;
+        box-shadow:.258em 0 #979797,.257em .015em #979797,.256em .028em #979797
+        ,.255em .04em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
         ,.244em .085em #979797,.24em .095em #979797,.237em .105em #979797,.234em .11em #979797,.229em .12em #979797,.222em .13em #979797,.22em .135em #979797
         ,.216em .14em #979797,.21em .15em #979797,.202em .16em #979797,.194em .17em #979797,.185em .18em #979797
         ,.181em -.182em #979797
-        ,.005em .005em #979797,.01em .01em #979797,.015em .015em #979797,.02em .02em #979797,.025em .025em #979797,.03em .03em #979797
-        ,.035em .035em #979797,.04em .04em #979797,.045em .045em #979797,.05em .05em #979797,.055em .055em #979797,.06em .06em #979797,.065em .065em #979797
-        ,.07em .07em #979797,.075em .075em #979797,.08em .08em #979797,.085em .085em #979797,.09em .09em #979797,.095em .095em #979797,.1em .1em #979797
-        ,-.005em -.005em #979797,-.01em -.01em #979797,-.015em -.015em #979797,-.02em -.02em #979797,-.025em -.025em #979797,-.03em -.03em #979797
-        ,-.035em -.035em #979797,-.04em -.04em #979797,-.045em -.045em #979797,-.05em -.05em #979797,-.055em -.055em #979797,-.06em -.06em #979797,-.065em -.065em #979797
-        ,-.07em -.07em #979797,-.075em -.075em #979797,-.08em -.08em #979797,-.085em -.085em #979797,-.09em -.09em #979797,-.095em -.095em #979797,-.1em -.1em #979797
-        ,.005em -.005em #979797,.01em -.01em #979797,.015em -.015em #979797,.02em -.02em #979797,.025em -.025em #979797,.03em -.03em #979797
-        ,.035em -.035em #979797,.04em -.04em #979797,.045em -.045em #979797,.05em -.05em #979797,.055em -.055em #979797,.06em -.06em #979797,.065em -.065em #979797
-        ,.07em -.07em #979797,.075em -.075em #979797,.08em -.08em #979797,.085em -.085em #979797,.09em -.09em #979797,.095em -.095em #979797,.1em -.1em #979797
-        ,-.005em .005em #979797,-.01em .01em #979797,-.015em .015em #979797,-.02em .02em #979797,-.025em .025em #979797,-.03em .03em #979797
-        ,-.035em .035em #979797,-.04em .04em #979797,-.045em .045em #979797,-.05em .05em #979797,-.055em .055em #979797,-.06em .06em #979797,-.065em .065em #979797
-        ,-.07em .07em #979797,-.075em .075em #979797,-.08em .08em #979797,-.085em .085em #979797,-.09em .09em #979797,-.095em .095em #979797,-.1em .1em #979797;}
-    85.99%  {background:#979797;
-        box-shadow:.258em 0 #979797,.258em .008em #979797,.257em .015em #979797,.257em .022em #979797,.256em .028em #979797,.255em .035em #979797
-        ,.255em .04em #979797,.254em .045em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
+        ,.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+        ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+        ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+        ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+        ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+        ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;}
+    75%  {background: #979797;
+        box-shadow:.258em 0 #979797,.257em .015em #979797,.256em .028em #979797
+        ,.255em .04em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
         ,.244em .085em #979797,.24em .095em #979797,.237em .105em #979797,.234em .11em #979797,.229em .12em #979797,.222em .13em #979797,.22em .135em #979797
         ,.216em .14em #979797,.21em .15em #979797,.202em .16em #979797,.194em .17em #979797,.185em .18em #979797
         ,.181em -.182em #979797
-        ,.005em .005em #979797,.01em .01em #979797,.015em .015em #979797,.02em .02em #979797,.025em .025em #979797,.03em .03em #979797
-        ,.035em .035em #979797,.04em .04em #979797,.045em .045em #979797,.05em .05em #979797,.055em .055em #979797,.06em .06em #979797,.065em .065em #979797
-        ,.07em .07em #979797,.075em .075em #979797,.08em .08em #979797,.085em .085em #979797,.09em .09em #979797,.095em .095em #979797,.1em .1em #979797
-        ,-.005em -.005em #979797,-.01em -.01em #979797,-.015em -.015em #979797,-.02em -.02em #979797,-.025em -.025em #979797,-.03em -.03em #979797
-        ,-.035em -.035em #979797,-.04em -.04em #979797,-.045em -.045em #979797,-.05em -.05em #979797,-.055em -.055em #979797,-.06em -.06em #979797,-.065em -.065em #979797
-        ,-.07em -.07em #979797,-.075em -.075em #979797,-.08em -.08em #979797,-.085em -.085em #979797,-.09em -.09em #979797,-.095em -.095em #979797,-.1em -.1em #979797
-        ,.005em -.005em #979797,.01em -.01em #979797,.015em -.015em #979797,.02em -.02em #979797,.025em -.025em #979797,.03em -.03em #979797
-        ,.035em -.035em #979797,.04em -.04em #979797,.045em -.045em #979797,.05em -.05em #979797,.055em -.055em #979797,.06em -.06em #979797,.065em -.065em #979797
-        ,.07em -.07em #979797,.075em -.075em #979797,.08em -.08em #979797,.085em -.085em #979797,.09em -.09em #979797,.095em -.095em #979797,.1em -.1em #979797
-        ,-.005em .005em #979797,-.01em .01em #979797,-.015em .015em #979797,-.02em .02em #979797,-.025em .025em #979797,-.03em .03em #979797
-        ,-.035em .035em #979797,-.04em .04em #979797,-.045em .045em #979797,-.05em .05em #979797,-.055em .055em #979797,-.06em .06em #979797,-.065em .065em #979797
-        ,-.07em .07em #979797,-.075em .075em #979797,-.08em .08em #979797,-.085em .085em #979797,-.09em .09em #979797,-.095em .095em #979797,-.1em .1em #979797;}
-    86%  {background:transparent;
-        box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.257em .022em transparent,.256em .028em transparent,.255em .035em transparent
-        ,.255em .04em transparent,.254em .045em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
+        ,.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+        ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+        ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+        ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+        ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+        ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;}
+    86%  {background: transparent;
+        box-shadow:.258em 0 transparent,.257em .015em transparent,.256em .028em transparent
+        ,.255em .04em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
         ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
         ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
-        ,.181em -.182em #979797;}
-    94.99%  {background:transparent;
-        box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.257em .022em transparent,.256em .028em transparent,.255em .035em transparent
-        ,.255em .04em transparent,.254em .045em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
+        ,.181em -.182em transparent
+        ,.01em .01em transparent,.02em .02em transparent,.03em .03em transparent
+        ,.04em .04em transparent,.05em .05em transparent,.06em .06em transparent
+        ,.07em .07em transparent,.08em .08em transparent,.09em .09em transparent,.1em .1em transparent
+        ,-.01em -.01em transparent,-.02em -.02em transparent,-.03em -.03em transparent
+        ,-.04em -.04em transparent,-.05em -.05em transparent,-.06em -.06em transparent
+        ,-.07em -.07em transparent,-.08em -.08em transparent,-.09em -.09em transparent,-.1em -.1em transparent
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    89%  {background: transparent;
+        box-shadow:.258em 0 transparent,.257em .015em transparent,.256em .028em transparent
+        ,.255em .04em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
         ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
         ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
-        ,.181em -.182em #979797;}
-    95%  {background:transparent;
-        box-shadow:.258em 0 #979797,.258em .008em #979797,.257em .015em #979797,.257em .022em #979797,.256em .028em #979797,.255em .035em #979797
-        ,.255em .04em #979797,.254em .045em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
+        ,.181em -.182em #979797
+        ,.01em .01em transparent,.02em .02em transparent,.03em .03em transparent
+        ,.04em .04em transparent,.05em .05em transparent,.06em .06em transparent
+        ,.07em .07em transparent,.08em .08em transparent,.09em .09em transparent,.1em .1em transparent
+        ,-.01em -.01em transparent,-.02em -.02em transparent,-.03em -.03em transparent
+        ,-.04em -.04em transparent,-.05em -.05em transparent,-.06em -.06em transparent
+        ,-.07em -.07em transparent,-.08em -.08em transparent,-.09em -.09em transparent,-.1em -.1em transparent
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    92%  {background: transparent;
+        box-shadow:.258em 0 transparent,.257em .015em transparent,.256em .028em transparent
+        ,.255em .04em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
+        ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
+        ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
+        ,.181em -.182em #979797
+        ,.01em .01em transparent,.02em .02em transparent,.03em .03em transparent
+        ,.04em .04em transparent,.05em .05em transparent,.06em .06em transparent
+        ,.07em .07em transparent,.08em .08em transparent,.09em .09em transparent,.1em .1em transparent
+        ,-.01em -.01em transparent,-.02em -.02em transparent,-.03em -.03em transparent
+        ,-.04em -.04em transparent,-.05em -.05em transparent,-.06em -.06em transparent
+        ,-.07em -.07em transparent,-.08em -.08em transparent,-.09em -.09em transparent,-.1em -.1em transparent
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    95%  {background: transparent;
+        box-shadow:.258em 0 #979797,.257em .015em #979797,.256em .028em #979797
+        ,.255em .04em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
         ,.244em .085em #979797,.24em .095em #979797,.237em .105em #979797,.234em .11em #979797,.229em .12em #979797,.222em .13em #979797,.22em .135em #979797
         ,.216em .14em #979797,.21em .15em #979797,.202em .16em #979797,.194em .17em #979797,.185em .18em #979797
-        ,.181em -.182em #979797;}
-    100% {background:transparent;
-        box-shadow:.258em 0 #979797,.258em .008em #979797,.257em .015em #979797,.257em .022em #979797,.256em .028em #979797,.255em .035em #979797
-        ,.255em .04em #979797,.254em .045em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
+        ,.181em -.182em #979797
+        ,.01em .01em transparent,.02em .02em transparent,.03em .03em transparent
+        ,.04em .04em transparent,.05em .05em transparent,.06em .06em transparent
+        ,.07em .07em transparent,.08em .08em transparent,.09em .09em transparent,.1em .1em transparent
+        ,-.01em -.01em transparent,-.02em -.02em transparent,-.03em -.03em transparent
+        ,-.04em -.04em transparent,-.05em -.05em transparent,-.06em -.06em transparent
+        ,-.07em -.07em transparent,-.08em -.08em transparent,-.09em -.09em transparent,-.1em -.1em transparent
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    98%  {background: #979797;
+        box-shadow:.258em 0 #979797,.257em .015em #979797,.256em .028em #979797
+        ,.255em .04em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
         ,.244em .085em #979797,.24em .095em #979797,.237em .105em #979797,.234em .11em #979797,.229em .12em #979797,.222em .13em #979797,.22em .135em #979797
         ,.216em .14em #979797,.21em .15em #979797,.202em .16em #979797,.194em .17em #979797,.185em .18em #979797
-        ,.181em -.182em #979797;}
+        ,.181em -.182em #979797
+        ,.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    100% {background: #979797;
+        box-shadow:.258em 0 #979797,.257em .015em #979797,.256em .028em #979797
+        ,.255em .04em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
+        ,.244em .085em #979797,.24em .095em #979797,.237em .105em #979797,.234em .11em #979797,.229em .12em #979797,.222em .13em #979797,.22em .135em #979797
+        ,.216em .14em #979797,.21em .15em #979797,.202em .16em #979797,.194em .17em #979797,.185em .18em #979797
+        ,.181em -.182em #979797
+        ,.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+        ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+        ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+        ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+        ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+        ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;}
 }
+
 @keyframes fail-l-after {
-    0%  {background:#979797;
-        box-shadow:.258em 0 #979797,.258em .008em #979797,.257em .015em #979797,.257em .022em #979797,.256em .028em #979797,.255em .035em #979797
-        ,.255em .04em #979797,.254em .045em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
+    0%   {background: #979797;
+        box-shadow:.258em 0 #979797,.257em .015em #979797,.256em .028em #979797
+        ,.255em .04em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
         ,.244em .085em #979797,.24em .095em #979797,.237em .105em #979797,.234em .11em #979797,.229em .12em #979797,.222em .13em #979797,.22em .135em #979797
         ,.216em .14em #979797,.21em .15em #979797,.202em .16em #979797,.194em .17em #979797,.185em .18em #979797
         ,.181em -.182em #979797
-        ,.005em .005em #979797,.01em .01em #979797,.015em .015em #979797,.02em .02em #979797,.025em .025em #979797,.03em .03em #979797
-        ,.035em .035em #979797,.04em .04em #979797,.045em .045em #979797,.05em .05em #979797,.055em .055em #979797,.06em .06em #979797,.065em .065em #979797
-        ,.07em .07em #979797,.075em .075em #979797,.08em .08em #979797,.085em .085em #979797,.09em .09em #979797,.095em .095em #979797,.1em .1em #979797
-        ,-.005em -.005em #979797,-.01em -.01em #979797,-.015em -.015em #979797,-.02em -.02em #979797,-.025em -.025em #979797,-.03em -.03em #979797
-        ,-.035em -.035em #979797,-.04em -.04em #979797,-.045em -.045em #979797,-.05em -.05em #979797,-.055em -.055em #979797,-.06em -.06em #979797,-.065em -.065em #979797
-        ,-.07em -.07em #979797,-.075em -.075em #979797,-.08em -.08em #979797,-.085em -.085em #979797,-.09em -.09em #979797,-.095em -.095em #979797,-.1em -.1em #979797
-        ,.005em -.005em #979797,.01em -.01em #979797,.015em -.015em #979797,.02em -.02em #979797,.025em -.025em #979797,.03em -.03em #979797
-        ,.035em -.035em #979797,.04em -.04em #979797,.045em -.045em #979797,.05em -.05em #979797,.055em -.055em #979797,.06em -.06em #979797,.065em -.065em #979797
-        ,.07em -.07em #979797,.075em -.075em #979797,.08em -.08em #979797,.085em -.085em #979797,.09em -.09em #979797,.095em -.095em #979797,.1em -.1em #979797
-        ,-.005em .005em #979797,-.01em .01em #979797,-.015em .015em #979797,-.02em .02em #979797,-.025em .025em #979797,-.03em .03em #979797
-        ,-.035em .035em #979797,-.04em .04em #979797,-.045em .045em #979797,-.05em .05em #979797,-.055em .055em #979797,-.06em .06em #979797,-.065em .065em #979797
-        ,-.07em .07em #979797,-.075em .075em #979797,-.08em .08em #979797,-.085em .085em #979797,-.09em .09em #979797,-.095em .095em #979797,-.1em .1em #979797;}
-    85.99%  {background:#979797;
-        box-shadow:.258em 0 #979797,.258em .008em #979797,.257em .015em #979797,.257em .022em #979797,.256em .028em #979797,.255em .035em #979797
-        ,.255em .04em #979797,.254em .045em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
+        ,.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+        ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+        ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+        ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+        ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+        ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;}
+    75%  {background: #979797;
+        box-shadow:.258em 0 #979797,.257em .015em #979797,.256em .028em #979797
+        ,.255em .04em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
         ,.244em .085em #979797,.24em .095em #979797,.237em .105em #979797,.234em .11em #979797,.229em .12em #979797,.222em .13em #979797,.22em .135em #979797
         ,.216em .14em #979797,.21em .15em #979797,.202em .16em #979797,.194em .17em #979797,.185em .18em #979797
         ,.181em -.182em #979797
-        ,.005em .005em #979797,.01em .01em #979797,.015em .015em #979797,.02em .02em #979797,.025em .025em #979797,.03em .03em #979797
-        ,.035em .035em #979797,.04em .04em #979797,.045em .045em #979797,.05em .05em #979797,.055em .055em #979797,.06em .06em #979797,.065em .065em #979797
-        ,.07em .07em #979797,.075em .075em #979797,.08em .08em #979797,.085em .085em #979797,.09em .09em #979797,.095em .095em #979797,.1em .1em #979797
-        ,-.005em -.005em #979797,-.01em -.01em #979797,-.015em -.015em #979797,-.02em -.02em #979797,-.025em -.025em #979797,-.03em -.03em #979797
-        ,-.035em -.035em #979797,-.04em -.04em #979797,-.045em -.045em #979797,-.05em -.05em #979797,-.055em -.055em #979797,-.06em -.06em #979797,-.065em -.065em #979797
-        ,-.07em -.07em #979797,-.075em -.075em #979797,-.08em -.08em #979797,-.085em -.085em #979797,-.09em -.09em #979797,-.095em -.095em #979797,-.1em -.1em #979797
-        ,.005em -.005em #979797,.01em -.01em #979797,.015em -.015em #979797,.02em -.02em #979797,.025em -.025em #979797,.03em -.03em #979797
-        ,.035em -.035em #979797,.04em -.04em #979797,.045em -.045em #979797,.05em -.05em #979797,.055em -.055em #979797,.06em -.06em #979797,.065em -.065em #979797
-        ,.07em -.07em #979797,.075em -.075em #979797,.08em -.08em #979797,.085em -.085em #979797,.09em -.09em #979797,.095em -.095em #979797,.1em -.1em #979797
-        ,-.005em .005em #979797,-.01em .01em #979797,-.015em .015em #979797,-.02em .02em #979797,-.025em .025em #979797,-.03em .03em #979797
-        ,-.035em .035em #979797,-.04em .04em #979797,-.045em .045em #979797,-.05em .05em #979797,-.055em .055em #979797,-.06em .06em #979797,-.065em .065em #979797
-        ,-.07em .07em #979797,-.075em .075em #979797,-.08em .08em #979797,-.085em .085em #979797,-.09em .09em #979797,-.095em .095em #979797,-.1em .1em #979797;}
-    86%  {background:transparent;
-        box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.257em .022em transparent,.256em .028em transparent,.255em .035em transparent
-        ,.255em .04em transparent,.254em .045em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
+        ,.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+        ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+        ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+        ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+        ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+        ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;}
+    86%  {background: transparent;
+        box-shadow:.258em 0 transparent,.257em .015em transparent,.256em .028em transparent
+        ,.255em .04em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
         ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
         ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
-        ,.181em -.182em #979797;}
-    94.99%  {background:transparent;
-        box-shadow:.258em 0 transparent,.258em .008em transparent,.257em .015em transparent,.257em .022em transparent,.256em .028em transparent,.255em .035em transparent
-        ,.255em .04em transparent,.254em .045em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
+        ,.181em -.182em transparent
+        ,.01em .01em transparent,.02em .02em transparent,.03em .03em transparent
+        ,.04em .04em transparent,.05em .05em transparent,.06em .06em transparent
+        ,.07em .07em transparent,.08em .08em transparent,.09em .09em transparent,.1em .1em transparent
+        ,-.01em -.01em transparent,-.02em -.02em transparent,-.03em -.03em transparent
+        ,-.04em -.04em transparent,-.05em -.05em transparent,-.06em -.06em transparent
+        ,-.07em -.07em transparent,-.08em -.08em transparent,-.09em -.09em transparent,-.1em -.1em transparent
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    89%  {background: transparent;
+        box-shadow:.258em 0 transparent,.257em .015em transparent,.256em .028em transparent
+        ,.255em .04em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
         ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
         ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
-        ,.181em -.182em #979797;}
-    95%  {background:transparent;
-        box-shadow:.258em 0 #979797,.258em .008em #979797,.257em .015em #979797,.257em .022em #979797,.256em .028em #979797,.255em .035em #979797
-        ,.255em .04em #979797,.254em .045em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
+        ,.181em -.182em #979797
+        ,.01em .01em transparent,.02em .02em transparent,.03em .03em transparent
+        ,.04em .04em transparent,.05em .05em transparent,.06em .06em transparent
+        ,.07em .07em transparent,.08em .08em transparent,.09em .09em transparent,.1em .1em transparent
+        ,-.01em -.01em transparent,-.02em -.02em transparent,-.03em -.03em transparent
+        ,-.04em -.04em transparent,-.05em -.05em transparent,-.06em -.06em transparent
+        ,-.07em -.07em transparent,-.08em -.08em transparent,-.09em -.09em transparent,-.1em -.1em transparent
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    92%  {background: transparent;
+        box-shadow:.258em 0 transparent,.257em .015em transparent,.256em .028em transparent
+        ,.255em .04em transparent,.253em .05em transparent,.252em .058em transparent,.25em .065em transparent,.25em .065em transparent,.247em .075em transparent
+        ,.244em .085em transparent,.24em .095em transparent,.237em .105em transparent,.234em .11em transparent,.229em .12em transparent,.222em .13em transparent,.22em .135em transparent
+        ,.216em .14em transparent,.21em .15em transparent,.202em .16em transparent,.194em .17em transparent,.185em .18em transparent
+        ,.181em -.182em #979797
+        ,.01em .01em transparent,.02em .02em transparent,.03em .03em transparent
+        ,.04em .04em transparent,.05em .05em transparent,.06em .06em transparent
+        ,.07em .07em transparent,.08em .08em transparent,.09em .09em transparent,.1em .1em transparent
+        ,-.01em -.01em transparent,-.02em -.02em transparent,-.03em -.03em transparent
+        ,-.04em -.04em transparent,-.05em -.05em transparent,-.06em -.06em transparent
+        ,-.07em -.07em transparent,-.08em -.08em transparent,-.09em -.09em transparent,-.1em -.1em transparent
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    95%  {background: transparent;
+        box-shadow:.258em 0 #979797,.257em .015em #979797,.256em .028em #979797
+        ,.255em .04em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
         ,.244em .085em #979797,.24em .095em #979797,.237em .105em #979797,.234em .11em #979797,.229em .12em #979797,.222em .13em #979797,.22em .135em #979797
         ,.216em .14em #979797,.21em .15em #979797,.202em .16em #979797,.194em .17em #979797,.185em .18em #979797
-        ,.181em -.182em #979797;}
-    100% {background:transparent;
-        box-shadow:.258em 0 #979797,.258em .008em #979797,.257em .015em #979797,.257em .022em #979797,.256em .028em #979797,.255em .035em #979797
-        ,.255em .04em #979797,.254em .045em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
+        ,.181em -.182em #979797
+        ,.01em .01em transparent,.02em .02em transparent,.03em .03em transparent
+        ,.04em .04em transparent,.05em .05em transparent,.06em .06em transparent
+        ,.07em .07em transparent,.08em .08em transparent,.09em .09em transparent,.1em .1em transparent
+        ,-.01em -.01em transparent,-.02em -.02em transparent,-.03em -.03em transparent
+        ,-.04em -.04em transparent,-.05em -.05em transparent,-.06em -.06em transparent
+        ,-.07em -.07em transparent,-.08em -.08em transparent,-.09em -.09em transparent,-.1em -.1em transparent
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    98%  {background: #979797;
+        box-shadow:.258em 0 #979797,.257em .015em #979797,.256em .028em #979797
+        ,.255em .04em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
         ,.244em .085em #979797,.24em .095em #979797,.237em .105em #979797,.234em .11em #979797,.229em .12em #979797,.222em .13em #979797,.22em .135em #979797
         ,.216em .14em #979797,.21em .15em #979797,.202em .16em #979797,.194em .17em #979797,.185em .18em #979797
-        ,.181em -.182em #979797;}
+        ,.181em -.182em #979797
+        ,.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em transparent,.02em -.02em transparent,.03em -.03em transparent
+        ,.04em -.04em transparent,.05em -.05em transparent,.06em -.06em transparent
+        ,.07em -.07em transparent,.08em -.08em transparent,.09em -.09em transparent,.1em -.1em transparent
+        ,-.01em .01em transparent,-.02em .02em transparent,-.03em .03em transparent
+        ,-.04em .04em transparent,-.05em .05em transparent,-.06em .06em transparent
+        ,-.07em .07em transparent,-.08em .08em transparent,-.09em .09em transparent,-.1em .1em transparent;}
+    100% {background: #979797;
+        box-shadow:.258em 0 #979797,.257em .015em #979797,.256em .028em #979797
+        ,.255em .04em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
+        ,.244em .085em #979797,.24em .095em #979797,.237em .105em #979797,.234em .11em #979797,.229em .12em #979797,.222em .13em #979797,.22em .135em #979797
+        ,.216em .14em #979797,.21em .15em #979797,.202em .16em #979797,.194em .17em #979797,.185em .18em #979797
+        ,.181em -.182em #979797
+        ,.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+        ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+        ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+        ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+        ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+        ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+        ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+        ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+        ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+        ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+        ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+        ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;}
 }

@@ -128,77 +128,126 @@
         -ms-transform:translate(-50%,-50%) rotate(50deg);
             transform:translate(-50%,-50%) rotateZ(50deg);
 }
-
-
-
-/* L */
-.vcon-done-l{
+.vcon-done,
+.vcon-fail{
     border:1px solid #c1c2c3;
     border-radius:50%;
-    font-size:200px;
 }
-.vcon-done-l:before{
+.vcon-done:before,
+.vcon-fail:before{
     width:.55em;
     height:.55em;
     box-sizing:border-box;
     border-radius:50%;
-    border:.035em solid #e4007f;
-    border-right-color:transparent;
 }
-.vcon-done-l:after{
-    width:.0345em;
-    height:.0345em;
+.vcon-done:before{
+    border:.05em solid #e4007f;
+    border-right-color:transparent;
+    -webkit-transform:translate(-50%,-50%) rotate(-30deg);
+        -ms-transform:translate(-50%,-50%) rotate(-30deg);
+            transform:translate(-50%,-50%) rotate(-30deg);
+}
+.vcon-done:after{
+    width:.13em;
+    height:.26em;
+    border:.05em solid #e4007f;
+    border-top-color:transparent;
+    border-left-color:transparent;
+    -webkit-transform:translate(-40%,-65%) rotate(45deg);
+        -ms-transform:translate(-40%,-65%) rotate(45deg);
+            transform:translate(-40%,-65%) rotate(45deg);
+}
+.vcon-fail:before{
+    border:.05em solid #979797;
+    border-right-color:transparent;
+    -webkit-transform:translate(-50%,-50%) rotate(-30deg);
+        -ms-transform:translate(-50%,-50%) rotate(-30deg);
+            transform:translate(-50%,-50%) rotate(-30deg);
+}
+.vcon-fail:after{
+    width:.04em;
+    height:.04em;
     border-radius:50%;
-    box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.257em .022em #e4007f,.256em .028em #e4007f,.255em .035em #e4007f
-    ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
-    ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
-    ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
-    ,.181em -.182em #e4007f
-    ,-.06em .11em #e4007f,-.055em .105em #e4007f,-.05em .1em #e4007f,-.045em .095em #e4007f,-.04em .09em #e4007f,-.035em .085em #e4007f
-    ,-.03em .08em #e4007f,-.025em .075em #e4007f,-.02em .07em #e4007f,-.015em .065em #e4007f,-.01em .06em #e4007f,-.005em .055em #e4007f,0 .05em #e4007f
-    ,.005em .045em #e4007f,.01em .04em #e4007f,.015em .035em #e4007f,.02em .03em #e4007f,.025em .025em #e4007f,.03em .02em #e4007f,.035em .015em #e4007f
-    ,.04em .01em #e4007f,.045em .005em #e4007f,.05em 0 #e4007f,.055em -.005em #e4007f,.06em -.01em #e4007f,.065em -.015em #e4007f,.07em -.02em #e4007f
-    ,.075em -.025em #e4007f,.08em -.03em #e4007f,.085em -.035em #e4007f,.09em -.04em #e4007f,.095em -.045em #e4007f,.1em -.05em #e4007f,.105em -.055em #e4007f
-    ,.11em -.06em #e4007f,.115em -.065em #e4007f,.12em -.07em #e4007f,.125em -.075em #e4007f,.13em -.08em #e4007f,.135em -.085em #e4007f
-    ,-.065em .11em #e4007f,-.07em .105em #e4007f,-.075em .1em #e4007f,-.08em .095em #e4007f,-.085em .09em #e4007f,-.09em .085em #e4007f
-    ,-.095em .08em #e4007f,-.1em .075em #e4007f,-.105em .07em #e4007f,-.11em .065em #e4007f,-.115em .06em #e4007f,-.12em .055em #e4007f,-.125em .05em #e4007f
-    ,-.13em .045em #e4007f,-.135em .04em #e4007f,-.14em .035em #e4007f,-.145em .03em #e4007f,-.15em .025em #e4007f,-.155em .02em #e4007f,-.16em .015em #e4007f;
+    background:#979797;
+    box-shadow:.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+    ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+    ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+    ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+    ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+    ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+    ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+    ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+    ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+    ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+    ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+    ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;
 }
 
+
+
+/* L */
+.vcon-done-l,
 .vcon-fail-l{
     border:1px solid #c1c2c3;
     border-radius:50%;
     font-size:200px;
 }
+.vcon-done-l:before,
 .vcon-fail-l:before{
     width:.55em;
     height:.55em;
     box-sizing:border-box;
     border-radius:50%;
-    border:.035em solid #979797;
-    border-right-color:transparent;
 }
+.vcon-done-l:after,
 .vcon-fail-l:after{
     width:.0345em;
     height:.0345em;
     border-radius:50%;
+}
+.vcon-done-l:before{
+    border:.035em solid #e4007f;
+    border-right-color:transparent;
+}
+.vcon-done-l:after{
+    box-shadow:.258em 0 #e4007f,.258em .008em #e4007f,.257em .015em #e4007f,.256em .028em #e4007f
+    ,.255em .04em #e4007f,.254em .045em #e4007f,.253em .05em #e4007f,.252em .058em #e4007f,.25em .065em #e4007f,.25em .065em #e4007f,.247em .075em #e4007f
+    ,.244em .085em #e4007f,.24em .095em #e4007f,.237em .105em #e4007f,.234em .11em #e4007f,.229em .12em #e4007f,.222em .13em #e4007f,.22em .135em #e4007f
+    ,.216em .14em #e4007f,.21em .15em #e4007f,.202em .16em #e4007f,.194em .17em #e4007f,.185em .18em #e4007f
+    ,.181em -.182em #e4007f
+    ,-.06em .11em #e4007f,-.05em .1em #e4007f,-.04em .09em #e4007f
+    ,-.03em .08em #e4007f,-.02em .07em #e4007f,-.01em .06em #e4007f,0 .05em #e4007f
+    ,.01em .04em #e4007f,.02em .03em #e4007f,.03em .02em #e4007f
+    ,.04em .01em #e4007f,.05em 0 #e4007f,.06em -.01em #e4007f,.07em -.02em #e4007f
+    ,.08em -.03em #e4007f,.09em -.04em #e4007f,.1em -.05em #e4007f
+    ,.11em -.06em #e4007f,.12em -.07em #e4007f,.13em -.08em #e4007f
+    ,-.07em .105em #e4007f,-.08em .095em #e4007f,-.09em .085em #e4007f
+    ,-.1em .075em #e4007f,-.11em .065em #e4007f,-.12em .055em #e4007f
+    ,-.13em .045em #e4007f,-.14em .035em #e4007f,-.15em .025em #e4007f,-.16em .015em #e4007f;
+}
+
+.vcon-fail-l:before{
+    border:.035em solid #979797;
+    border-right-color:transparent;
+}
+.vcon-fail-l:after{
     background: #979797;
-    box-shadow:.258em 0 #979797,.258em .008em #979797,.257em .015em #979797,.257em .022em #979797,.256em .028em #979797,.255em .035em #979797
-    ,.255em .04em #979797,.254em .045em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
+    box-shadow:.258em 0 #979797,.257em .015em #979797,.256em .028em #979797
+    ,.255em .04em #979797,.253em .05em #979797,.252em .058em #979797,.25em .065em #979797,.25em .065em #979797,.247em .075em #979797
     ,.244em .085em #979797,.24em .095em #979797,.237em .105em #979797,.234em .11em #979797,.229em .12em #979797,.222em .13em #979797,.22em .135em #979797
     ,.216em .14em #979797,.21em .15em #979797,.202em .16em #979797,.194em .17em #979797,.185em .18em #979797
     ,.181em -.182em #979797
-    ,.005em .005em #979797,.01em .01em #979797,.015em .015em #979797,.02em .02em #979797,.025em .025em #979797,.03em .03em #979797
-    ,.035em .035em #979797,.04em .04em #979797,.045em .045em #979797,.05em .05em #979797,.055em .055em #979797,.06em .06em #979797,.065em .065em #979797
-    ,.07em .07em #979797,.075em .075em #979797,.08em .08em #979797,.085em .085em #979797,.09em .09em #979797,.095em .095em #979797,.1em .1em #979797
-    ,-.005em -.005em #979797,-.01em -.01em #979797,-.015em -.015em #979797,-.02em -.02em #979797,-.025em -.025em #979797,-.03em -.03em #979797
-    ,-.035em -.035em #979797,-.04em -.04em #979797,-.045em -.045em #979797,-.05em -.05em #979797,-.055em -.055em #979797,-.06em -.06em #979797,-.065em -.065em #979797
-    ,-.07em -.07em #979797,-.075em -.075em #979797,-.08em -.08em #979797,-.085em -.085em #979797,-.09em -.09em #979797,-.095em -.095em #979797,-.1em -.1em #979797
-    ,.005em -.005em #979797,.01em -.01em #979797,.015em -.015em #979797,.02em -.02em #979797,.025em -.025em #979797,.03em -.03em #979797
-    ,.035em -.035em #979797,.04em -.04em #979797,.045em -.045em #979797,.05em -.05em #979797,.055em -.055em #979797,.06em -.06em #979797,.065em -.065em #979797
-    ,.07em -.07em #979797,.075em -.075em #979797,.08em -.08em #979797,.085em -.085em #979797,.09em -.09em #979797,.095em -.095em #979797,.1em -.1em #979797
-    ,-.005em .005em #979797,-.01em .01em #979797,-.015em .015em #979797,-.02em .02em #979797,-.025em .025em #979797,-.03em .03em #979797
-    ,-.035em .035em #979797,-.04em .04em #979797,-.045em .045em #979797,-.05em .05em #979797,-.055em .055em #979797,-.06em .06em #979797,-.065em .065em #979797
-    ,-.07em .07em #979797,-.075em .075em #979797,-.08em .08em #979797,-.085em .085em #979797,-.09em .09em #979797,-.095em .095em #979797,-.1em .1em #979797;
+    ,.01em .01em #979797,.02em .02em #979797,.03em .03em #979797
+    ,.04em .04em #979797,.05em .05em #979797,.06em .06em #979797
+    ,.07em .07em #979797,.08em .08em #979797,.09em .09em #979797,.1em .1em #979797
+    ,-.01em -.01em #979797,-.02em -.02em #979797,-.03em -.03em #979797
+    ,-.04em -.04em #979797,-.05em -.05em #979797,-.06em -.06em #979797
+    ,-.07em -.07em #979797,-.08em -.08em #979797,-.09em -.09em #979797,-.1em -.1em #979797
+    ,.01em -.01em #979797,.02em -.02em #979797,.03em -.03em #979797
+    ,.04em -.04em #979797,.05em -.05em #979797,.06em -.06em #979797
+    ,.07em -.07em #979797,.08em -.08em #979797,.09em -.09em #979797,.1em -.1em #979797
+    ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
+    ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
+    ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;
 }
 
