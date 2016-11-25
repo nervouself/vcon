@@ -226,8 +226,6 @@
     border:.12em solid;
     border-radius:50%;
     border-color:#979797 transparent;
-    -webkit-animation:3s turning infinite ease-in-out;
-            animation:3s turning infinite ease-in-out;
 }
 .vcm-refresh:before,
 .vcm-refresh:after{
@@ -264,6 +262,27 @@
     -webkit-transform:translate(-50%,-50%) rotateZ(50deg);
         -ms-transform:translate(-50%,-50%) rotate(50deg);
             transform:translate(-50%,-50%) rotateZ(50deg);
+}
+.vcm-loading:after{
+    width:.06em;
+    height:.06em;
+    box-shadow:.4em 0 0 .07em #979797,0 -.4em 0 .05em #979797,-.4em 0 0 .03em #979797,0 .4em 0 .01em #979797
+        ,.2825em -.2825em 0 .06em #979797,-.2825em -.2825em 0 .04em #979797,-.2825em .2825em 0 .02em #979797,.2825em .2825em #979797;
+    border-radius:50%;
+}
+.vcm-loading2:after{
+    width:.2em;
+    height:.2em;
+    box-shadow:.4em 0 rgba(151,151,151,1),0 -.4em rgba(151,151,151,.75),-.4em 0 rgba(151,151,151,.5),0 .4em rgba(151,151,151,.25)
+        ,.2825em -.2825em rgba(151,151,151,.875),-.2825em -.2825em rgba(151,151,151,.625),-.2825em .2825em rgba(151,151,151,.375),.2825em .2825em rgba(151,151,151,.125);
+    border-radius:50%;
+}
+.vcm-refresh,
+.vcm-refresh2,
+.vcm-loading,
+.vcm-loading2{
+    -webkit-animation:3s turning infinite ease-in-out;
+            animation:3s turning infinite ease-in-out;
 }
 @-webkit-keyframes turning {
     0%   {-webkit-transform:rotate(0);transform:rotate(0);}
@@ -1137,26 +1156,6 @@
         ,-.01em .01em #979797,-.02em .02em #979797,-.03em .03em #979797
         ,-.04em .04em #979797,-.05em .05em #979797,-.06em .06em #979797
         ,-.07em .07em #979797,-.08em .08em #979797,-.09em .09em #979797,-.1em .1em #979797;}
-}
-
-.vcm-loading:after{
-    width:.06em;
-    height:.06em;
-    box-shadow:.4em 0 0 .07em #979797,0 -.4em 0 .05em #979797,-.4em 0 0 .03em #979797,0 .4em 0 .01em #979797
-        ,.2825em -.2825em 0 .06em #979797,-.2825em -.2825em 0 .04em #979797,-.2825em .2825em 0 .02em #979797,.2825em .2825em #979797;
-    border-radius:50%;
-    -webkit-animation:3s turning infinite ease-in-out;
-            animation:3s turning infinite ease-in-out;
-}
-
-.vcm-loading2:after{
-    width:.2em;
-    height:.2em;
-    box-shadow:.4em 0 rgba(151,151,151,1),0 -.4em rgba(151,151,151,.75),-.4em 0 rgba(151,151,151,.5),0 .4em rgba(151,151,151,.25)
-        ,.2825em -.2825em rgba(151,151,151,.875),-.2825em -.2825em rgba(151,151,151,.625),-.2825em .2825em rgba(151,151,151,.375),.2825em .2825em rgba(151,151,151,.125);
-    border-radius:50%;
-    -webkit-animation:3s turning infinite ease-in-out;
-            animation:3s turning infinite ease-in-out;
 }
 
 .vcm-shield{
