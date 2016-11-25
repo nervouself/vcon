@@ -1149,6 +1149,16 @@
             animation:3s turning infinite ease-in-out;
 }
 
+.vcm-loading2:after{
+    width:.2em;
+    height:.2em;
+    box-shadow:.4em 0 rgba(151,151,151,1),0 -.4em rgba(151,151,151,.75),-.4em 0 rgba(151,151,151,.5),0 .4em rgba(151,151,151,.25)
+        ,.2825em -.2825em rgba(151,151,151,.875),-.2825em -.2825em rgba(151,151,151,.625),-.2825em .2825em rgba(151,151,151,.375),.2825em .2825em rgba(151,151,151,.125);
+    border-radius:50%;
+    -webkit-animation:3s turning infinite ease-in-out;
+            animation:3s turning infinite ease-in-out;
+}
+
 .vcm-shield{
     overflow: hidden;
     height:1.1em;
